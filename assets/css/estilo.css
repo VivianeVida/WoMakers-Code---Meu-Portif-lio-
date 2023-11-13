@@ -1,0 +1,201 @@
+/* Define a cor do texto e remove o sublinhado de links */
+body {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para o bloco 'me' */
+.me {
+    width: 400px;
+    margin: 90px auto; /* Margem superior 90px, alinhamento central horizontal */
+}
+
+/* Estilos para os parágrafos (p) e títulos (h1) dentro de 'me' */
+.me p,
+.me h1 {
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+/* Estilos específicos para os parágrafos (p) dentro de 'me' */
+.me p {
+    font-weight: 200;
+}
+
+/* Estilos para o elemento 'span' dentro de 'me' */
+.me span {
+    font-weight: bold;
+}
+
+/* Estilos para a seção 'social' */
+.social {
+    position: fixed;
+    top: 20px;
+}
+
+/* Estilos para a lista não ordenada (ul) dentro de 'social' */
+.social ul {
+    padding: 0px;
+    transform: translate(-270px, 0);
+}
+
+/* Estilos para os itens da lista (li) dentro de 'social ul' */
+.social ul li {
+    display: block;
+    margin: 5px;
+    background: rgba(0, 0, 0, 0.36);
+    width: 300px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 0 30px 30px 0;
+    transition: all 1s;
+}
+
+/* Estilos quando um item da lista é destacado no hover */
+.social ul li:hover {
+    transform: translate(110px, 0);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Estilos para links (a) dentro de 'social ul li' quando em hover */
+.social ul li:hover a {
+    color: #000;
+}
+
+/* Estilos para ícones (i) dentro de 'social ul li' quando em hover */
+.social ul li:hover i {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.36);
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+/* Estilos para ícones (i) dentro de 'social ul li' */
+.social ul li i {
+    margin-left: 10px;
+    color: #000;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    background: #ffffff;
+    transform: rotate(0deg);
+}
+
+/* Estilos para o corpo da página (body) */
+body {
+    background: #4F8B89;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Estilos quando um link (a) está em hover */
+a:hover {
+    background: #ef92a3;
+}
+
+/* Estilos para o elemento 'span' dentro de um link (a) */
+/* Estes estilos criam um efeito de "pop-up" no hover */
+a span {
+    color: #666;
+    position: absolute;
+    font-family: sans-serif;
+    bottom: 0;
+    left: -25px;
+    right: -25px;
+    padding: 5px 7px;
+    z-index: -1;
+    font-size: 14px;
+    border-radius: 2px;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    -o-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -moz-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Estilos para a "seta" do "pop-up" */
+a span:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    position: absolute;
+    bottom: -5px;
+    left: 40px;
+}
+
+/* Estilos para o "pop-up" quando um link (a) está em hover */
+a:hover span {
+    bottom: 50px;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Estilos para ícones usando pseudoclasses nth-of-type */
+a:nth-of-type(1):before {
+    content: '\f09a';
+}
+a:nth-of-type(2):before {
+    content: '\f099';
+}
+a:nth-of-type(3):before {
+    content: '\f0d5';
+}
+a:nth-of-type(4):before {
+    content: '\f113';
+}
+a:nth-of-type(5):before {
+    content: '\f17d';
+}
+a:nth-of-type(6):before {
+    content: '\f1cb';
+}
+
+/* Estilos para a imagem redonda */
+.imgRedonda {
+    display: block;
+    margin: 2% auto 0; /* 10% de margem superior para descer a imagem */
+    border-radius: 50%;
+    width: 500px; /* Tamanho duplicado (o dobro de 100px) */
+    transition: all 0.5s;
+}
+
+/* Estilos para a imagem redonda quando está em hover */
+.imgRedonda:hover {
+    border-radius: 0%;
+    transition: all 0.5s;
+}
+
+/* Estilos para o parágrafo com formatação de livro */
+.book-paragraph {
+    text-align: justify; /* Alinhar o texto justificado */
+    text-indent: 1em; /* Adicionar um recuo na primeira linha */
+    margin-top: 0; /* Remover margem superior padrão */
+    margin-bottom: 1em; /* Adicionar uma margem na parte inferior para separar parágrafos */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+/* Estilos para centralizar a linha do tempo */
+.timeline-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.timeline-item {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 400px; /* Define uma largura máxima para os itens da linha do tempo */
+    background: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
